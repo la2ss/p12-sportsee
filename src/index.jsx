@@ -8,6 +8,7 @@ import './index.css'
 
 // Components
 import Header from './components/header'
+import Sidebar from './components/sidebar'
 
 
 // Pages
@@ -23,7 +24,7 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <AppProvider>
-            
+            <Sidebar />
                 <Header />
                
                     <Routes>
