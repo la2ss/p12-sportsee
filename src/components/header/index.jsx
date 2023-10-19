@@ -2,7 +2,7 @@ import { Container, Logo, Navigation, Link } from './styled'
 
 // Context
 import { useContext } from 'react'
-import { AppContext } from '../../service'
+import { AppContext } from '../../context'
 
 /** Composant header avec navigation.
  * @returns {JSX.Element} Composant header avec navigation.
