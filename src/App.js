@@ -1,13 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+//React Router (v6)
+//import { Route, Routes } from "react-router-dom";
+
+//Pages
+
+
+//Style
+import './styles/App.css';
+
+
+
+// <Route path="/" element={<Home />} />
+//<Routes>
+//<Route path="/" />
+//<Route path="/*" />
+//<Route path="/about" />
+//<Route path="/logements/:id" />
+//</Routes>
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      
+
+    
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Développez un tableau de bord d'analytics avec React.
         </p>
         <a
           className="App-link"
