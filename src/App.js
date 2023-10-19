@@ -1,5 +1,15 @@
-//React Router (v6)
-//import { Route, Routes } from "react-router-dom";
+// React
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+// Global Styles
+import './index.css'
+
+// Components
+import Header from './components/header'
+// import Sidebar from './components/sidebar'
+// import PagesWrapper from './components/pagesWrapper'
 
 //Pages
 
@@ -7,7 +17,8 @@
 //Style
 import './styles/App.css';
 
-
+// Providers
+import { AppProvider } from './service/context'
 
 // <Route path="/" element={<Home />} />
 //<Routes>
@@ -20,23 +31,9 @@ import './styles/App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      
-
-    
-        
-        <p>
-        Développez un tableau de bord d'analytics avec React.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<AppProvider>
+<Header />
+</AppProvider>
     </div>
   );
 }
