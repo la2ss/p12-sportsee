@@ -9,6 +9,6 @@ export const AppContext = createContext()
  * @returns {JSX.Element} Fournisseur de contexte.
  */
 export function AppProvider({ children }) {
-    const [userId, setUserId] = useState(12)
+    const [userId, setUserId] = useState()
     return <AppContext.Provider value={{ userId, setUserId }}>{children}</AppContext.Provider>
 }
