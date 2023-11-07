@@ -1,41 +1,31 @@
-// // React
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-// // Global Styles
-// import './index.css'
-
-// // Components
-// import Header from './components/header'
-// // import Sidebar from './components/sidebar'
-// // import PagesWrapper from './components/pagesWrapper'
-
-// //Pages
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Profile from './pages/Profile/Profile'
+import Error404 from './pages/Error/Error'
 
 
-// //Style
-// import './styles/App.css';
+// Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
+import "bootstrap/dist/js/bootstrap.bundle";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
-// // Providers
-// import { AppProvider } from './service/context'
+function App() {
+	return (
+		<div className="App">
+			<Routes>
+				<Route path="/" element={<Profile />} />
+				<Route path="/profiler" element={<Profile />} />
+				<Route path="/user/:userId" element={<Home />} />
+				<Route path="*" element={<Error404 />} />
+				<Route path="/Communaute" element={<Profile />} />
+				<Route path="/Reglage" element={<Profile />} />
+				{/* <Route path="/" element={<Home />} />
+				<Route path="/user/:userId" element={<Profile />} />
+				<Route path="*" element={<Error404 />} /> */}
+			</Routes>
+		</div>
+	)
+}
 
-// // <Route path="/" element={<Home />} />
-// //<Routes>
-// //<Route path="/" />
-// //<Route path="/*" />
-// //<Route path="/about" />
-// //<Route path="/logements/:id" />
-// //</Routes>
-
-// function App() {
-//   return (
-//     <div className="App">
-// <AppProvider>
-// <Header />
-// </AppProvider>
-//     </div>
-//   );
-// }
-
-// export default App;
+export default App
