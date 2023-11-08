@@ -6,20 +6,8 @@ import lipid from '../../../assets/lipid-icon.svg'
 // Je crée un objet qui contient les propriétés de chaque type de nutrition
 const TYPES = {
 	calorieCount: { color: 'red', unit: 'kCal', typeName: 'Calories', icon: calory, hoverColor: 'rgba(255, 0, 0, 0.4)' },
-	proteinCount: {
-		color: 'blue',
-		unit: 'g',
-		typeName: 'Protéines',
-		icon: protein,
-		hoverColor: 'rgba(74, 184, 255, 0.4)',
-	},
-	carbohydrateCount: {
-		color: 'yellow',
-		unit: 'g',
-		typeName: 'Glucides',
-		icon: glucid,
-		hoverColor: 'rgba(249, 206, 35, 0.4)',
-	},
+	proteinCount: {color: 'blue', unit: 'g', typeName: 'Protéines', icon: protein,	hoverColor: 'rgba(74, 184, 255, 0.4)',	},
+	carbohydrateCount: {color: 'yellow', unit: 'g',	typeName: 'Glucides', icon: glucid, hoverColor: 'rgba(249, 206, 35, 0.4)',},
 	lipidCount: { color: 'pink', unit: 'g', typeName: 'Lipides', icon: lipid, hoverColor: 'rgba(253, 81, 129, 0.4)' },
 }
 

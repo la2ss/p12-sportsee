@@ -20,9 +20,7 @@ function App() {
 				<Route path="*" element={<Error404 />} />
 				<Route path="/Communaute" element={<Profile />} />
 				<Route path="/Reglage" element={<Profile />} />
-				{/* <Route path="/" element={<Home />} />
-				<Route path="/user/:userId" element={<Profile />} />
-				<Route path="*" element={<Error404 />} /> */}
+	
 			</Routes>
 		</div>
 	)
